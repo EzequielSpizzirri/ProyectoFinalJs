@@ -1,0 +1,19 @@
+{
+    "alumnos": [
+      {
+        "nombre": "Juan",
+        "apellido": "Pérez",
+        "notas": [8.5, 7.2, 9.0]
+      },
+      {
+        "nombre": "María",
+        "apellido": "Gómez",
+        "notas": [6.8, 8.9, 7.5]
+      },
+      {
+        "nombre": "Carlos",
+        "apellido": "Rodríguez",
+        "notas": [7.0, 6.5, 8.2]
+      }
+    ]
+  }  

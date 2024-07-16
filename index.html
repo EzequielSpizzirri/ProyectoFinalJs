@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header>
+        <h1>Simulador Interactivo</h1>
+    </header>
+    <main>
+        <section id="simulador">
+            <div class="container">
+                <div class="inputs">
+                    <h2>Calculadora de Notas Finales</h2>
+                    <label for="nota">Ingrese la nota del alumno:</label>
+                    <input type="number" id="nota" placeholder="Ingrese la nota del alumno">
+                    <button id="agregarNotaButton">Agregar Nota</button>
+                    <button id="calcularPromedioButton">Calcular Promedio</button>
+                    <button id="limpiarButton">Limpiar Notas</button>
+                    <div class="result" id="result"></div>
+                </div>
+                <div class="results">
+                    <h3>Notas Ingresadas</h3>
+                    <ul class="notas" id="notasList"></ul>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="inputs">
+                    <h2>Calculadora</h2>
+                    <label for="num1">Número 1:</label>
+                    <input type="number" id="num1" placeholder="Número 1">
+                    <label for="num2">Número 2:</label>
+                    <input type="number" id="num2" placeholder="Número 2">
+                    <button id="sumarButton">Sumar</button>
+                    <button id="restarButton">Restar</button>
+                    <button id="multiplicarButton">Multiplicar</button>
+                    <button id="dividirButton">Dividir</button>
+                    <div class="result" id="resultOperaciones"></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="inputs">
+                    <h2>Agregar Alumno</h2>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Nombre">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" placeholder="Apellido">
+                    <label for="notas">Notas (separadas por coma):</label>
+                    <input type="text" id="notas" placeholder="Notas">
+                    <button id="agregarAlumnoButton">Agregar Alumno</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="inputs">
+                    <h2>Buscar Alumno</h2>
+                    <label for="buscar">Buscar por nombre o apellido:</label>
+                    <input type="text" id="buscar" placeholder="Buscar">
+                    <button id="buscarAlumnoButton">Buscar</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="results">
+                    <h2>Lista de Alumnos</h2>
+                    <ul id="listaAlumnos"></ul>
+                </div>
+            </div>
+        </section>
+        <aside id="informacion">
+            <h2>Información</h2>
+            <div id="instrucciones">
+                <h3>Instrucciones de Uso</h3>
+                <p>Bienvenido al Simulador Interactivo. Aquí puedes:</p>
+                <ul>
+                    <li>Agregar y calcular promedios de notas de alumnos.</li>
+                    <li>Realizar operaciones matemáticas básicas.</li>
+                    <li>Agregar y buscar alumnos por nombre o apellido.</li>
+                </ul>
+            </div>
+            <div id="estadisticas">
+                <h3>Estadísticas</h3>
+                <p>Total de alumnos agregados: <span id="totalAlumnos">0</span></p>
+                <p>Notas agregadas: <span id="totalNotas">0</span></p>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 Simulador Interactivo</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

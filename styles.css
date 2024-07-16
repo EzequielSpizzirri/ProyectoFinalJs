@@ -1,0 +1,52 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+section, aside {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container {
+    display: flex;
+    max-width: 75%;
+    margin: auto;
+    gap: 30px;
+}
+.inputs, .results {
+    flex: 1;
+    margin-right: 30px;
+}
+input, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    min-width: 200px;
+}
+.result, .notas {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+ul {
+    padding-left: 20px;
+}
