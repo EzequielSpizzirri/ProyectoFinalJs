@@ -1,52 +1,88 @@
-/* Estilos básicos */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
+    background-color: #f8f9fa;
+}
+header {
+    background-color: #343a40;
+}
+footer {
+    background-color: #343a40;
+}
+.card {
+    border-radius: 0.5rem;
+}
+.btn {
+    border-radius: 0.5rem;
+}
+.result {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #e9ecef;
+    border-radius: 0.5rem;
+}
+.list-group {
     padding: 0;
 }
-header, footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
+
+.list-group-item {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
 }
-main {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
 }
-section, aside {
-    flex: 1;
-    background-color: #fff;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+#notasList {
+    list-style: none;
+    padding: 0;
 }
-.container {
-    display: flex;
-    max-width: 75%;
-    margin: auto;
-    gap: 30px;
+
+#notasList li {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #f8f9fa;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
 }
-.inputs, .results {
-    flex: 1;
-    margin-right: 30px;
+
+#notasList li:hover {
+    background-color: #e9ecef;
 }
-input, button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    box-sizing: border-box;
-    min-width: 200px;
+
+/* Estilo para la sección de información */
+#informacion .card {
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
-.result, .notas {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #f4f4f4;
+
+#informacion .card-header {
+    background-color: #343a40;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-ul {
-    padding-left: 20px;
+
+#informacion .card-body {
+    background-color: #f8f9fa;
+}
+
+#informacion h4 {
+    color: #343a40;
+    margin-top: 1.5rem;
+}
+
+#informacion ul {
+    margin-bottom: 1rem;
+}
+
+#informacion p {
+    color: #495057;
+}
+
+#informacion span {
+    font-weight: bold;
 }

@@ -65,12 +65,15 @@ function mostrarResultado(mensaje) {
 function actualizarListaNotas() {
     const notasList = document.getElementById('notasList');
     notasList.innerHTML = '';
+
     for (let nota of notas) {
         const li = document.createElement('li');
-        li.innerText = nota;
+        li.textContent = nota;
+        li.classList.add('list-group-item', 'animate__animated', 'animate__fadeIn');
         notasList.appendChild(li);
     }
 }
+
 
 // Función para limpiar el array de notas y el mensaje de resultado
 function limpiarNotas() {
@@ -228,7 +231,7 @@ function actualizarListaAlumnos() {
     alumnos.forEach(alumno => {
         const item = document.createElement('li');
         item.textContent = `${alumno.nombre} ${alumno.apellido}: ${alumno.notas.join(', ')}`;
-        item.classList.add('animate__animated', 'animate__fadeIn');
+        item.classList.add('list-group-item', 'animate__animated', 'animate__fadeIn');
         listaAlumnos.appendChild(item);
     });
 }
